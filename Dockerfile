@@ -9,3 +9,15 @@ RUN yum install -y sudo \
 
 # Install the Chef client
 RUN curl -L https://www.opscode.com/chef/install.sh | bash
+
+# Install build essentials packages
+RUN yum install -y tar \
+    autoconf \
+    bison \
+    flex \
+    gcc \
+    gcc-c++ \
+    kernel-devel \
+    make \
+    m4 \
+    patch
