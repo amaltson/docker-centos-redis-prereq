@@ -21,3 +21,7 @@ RUN yum install -y tar \
     make \
     m4 \
     patch
+
+# Download and cache Redis locally
+RUN curl -o /usr/local/redis-2.8.17.tar.gz \
+    http://download.redis.io/releases/redis-2.8.17.tar.gz
